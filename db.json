@@ -2,7 +2,7 @@
   "dogs": [
     {
       "id": 1,
-      "name": "Baby",
+      "name": "Baby ",
       "breed": " Deerhound",
       "sex": "male"
     },
@@ -20,7 +20,7 @@
     },
     {
       "id": 4,
-      "name": "Baby",
+      "name": "Baby Beluga",
       "breed": " Deerhound",
       "sex": "male"
     },
@@ -69,7 +69,7 @@
     {
       "id": 12,
       "name": "Misty",
-      "breed": "Patterdale Terrier",
+      "breed": " Terrier",
       "sex": "female"
     },
     {

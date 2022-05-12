@@ -60,6 +60,15 @@ function patchDog(dogObj) {
       body: JSON.stringify(dogObj),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
-  }
+      .then((newDog) => {
+          alert(`${newDog.name} successfully updated.`)
+          reRenderAllDogsAfterUpdate();
+        })
+}
 
+function reRenderAllDogsAfterUpdate(){
+  fetch("http://localhost:3000/dogs")
+  .then(res => res.json())
+  .then(dogObjects => dogObjects.forEach((dogObj) => renderDogObj(dogObj)));
+  location.reload()
+}
